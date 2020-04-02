@@ -12,9 +12,13 @@ if(isEmpty()){
 
 $validate = validate([
     'name' => 's',
-    'sobrenome' => 's',
-    'email' => 'e',
-
+    'phone' => 'i',
+    'trufa' => 'i',
+    'brownie' => 'i',
+    'ovo' => 'i',
+    'tele' => 'i',
+    'total' => 'i',
+    
 ]);
 
 $atualizado = update('users', $validate, ['id', $id]);

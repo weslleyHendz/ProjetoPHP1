@@ -15,11 +15,11 @@ function request(){
     return $_GET;
 
 function redirect($target){
-    return header("location:/CursoPHP/public?page={$target}");
+    return header("location:/ProjetoPHP1/public?page={$target}");
 }
 
 function redirectToHome(){
-    return header("location:/CursoPHP/public?page=home");
+    return header("location:/ProjetoPHP1/public?page=home");
 }
 
 

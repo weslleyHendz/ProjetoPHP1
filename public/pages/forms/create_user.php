@@ -10,10 +10,13 @@ if(isEmpty()){
 
 $validate = validate([
     'name' => 's',
-    'sobrenome' => 's',
-    'email' => 'e',
-    'password' => 's',
-
+    'phone' => 'i',
+    'trufa' => 'i',
+    'brownie' => 'i',
+    'ovo' => 'i',
+    'tele' => 'i',
+    'total' => 'i',
+    
 ]);
 
 $cadastrado = create('users', $validate);

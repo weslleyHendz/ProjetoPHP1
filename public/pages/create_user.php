@@ -3,23 +3,37 @@
 <form action="pages/forms/create_user.php" method="POST" role="form">
 
     <div class="form-group">
-        <label for="">Nome</label>
+        <label for="">Nome Completo</label>
         <input type="text" class="form-control" name="name" placeholder="Input field">
     </div>
 
     <div class="form-group">
-        <label for="">Sobrenome</label>
-        <input type="text" class="form-control" name="sobrenome" placeholder="Input field">
+        <label for="">Telefone</label>
+        <input type="text" class="form-control" name="phone" placeholder="Input field">
     </div>
 
     <div class="form-group">
-        <label for="">Email</label>
-        <input type="text" class="form-control" name="email" placeholder="Input field">
+        <label for="">Trufas</label>
+        <input type="text" class="form-control" name="trufa" placeholder="Input field">
     </div>
 
     <div class="form-group">
-        <label for="">Password</label>
-        <input type="text" class="form-control" name="password" placeholder="Input field">
+        <label for="">Brownie</label>
+        <input type="int" class="form-control" name="brownie" placeholder="Input field">
+    </div>
+
+    <div class="form-group">
+        <label for="">Ovos de colher</label>
+        <input type="text" class="form-control" name="ovo" placeholder="Input field">
+    </div>
+    <div class="form-group">
+        <label for="">Tele-Entrega</label>
+        <input type="text" class="form-control" name="tele" placeholder="Input field">
+    </div>
+
+    <div class="form-group">
+        <label for="">Valor Total</label>
+        <input type="text" class="form-control" name="total" placeholder="Input field">
     </div>
 
 
