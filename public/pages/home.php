@@ -1,6 +1,9 @@
+<a href="?page=guess_game"><button autofocus="autofocus">Game adivinhe um número</a></button>
+
 <a href="?page=create_user"><button autofocus="autofocus">Cadastrar user</a></button>
 <br>
 <a href="?page=contato"><button autofocus="autofocus">Contato</a></button>
+
 
 <h2>Página inicial</h2>
 <?=get('message');?>
