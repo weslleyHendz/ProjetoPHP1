@@ -51,7 +51,7 @@ if(isset($_POST['entrada']) && $_POST['entrada'] !="sim") {
     
     }elseif($_SESSION >= "3"){
     echo "<br>Você já usou " . $_SESSION['tentativa'] . " tentativa(s)";}
-    if($_SESSION['tentativa'] >= "7"){
+    if($_SESSION['tentativa'] >= "7" && ($_POST['entrada'] != $_SESSION['numero'])){
         unset($_SESSION['numero']);
         unset($_SESSION['tentativa']);
 
