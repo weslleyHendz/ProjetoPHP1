@@ -9,6 +9,7 @@ if(isEmpty()){
 }
 
 $validate = validate([
+    'id' => 'i',
     'name' => 's',
     'phone' => 'i',
     'trufa' => 'i',

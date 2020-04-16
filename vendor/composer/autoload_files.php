@@ -12,4 +12,5 @@ return array(
     '9ccad70ea60c4a88b9b1e227a77b9f92' => $baseDir . '/app/function/flash.php',
     '20e927c69703d5d80347ce40df061c76' => $baseDir . '/app/function/email.php',
     'de75e250d2ba14cf52c6557e43eb8a9b' => $baseDir . '/app/function/database.php',
+    'd1a142a570aeb39b944dfa340d52b5b1' => $baseDir . '/app/function/config.php',
 );

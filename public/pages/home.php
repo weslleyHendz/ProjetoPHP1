@@ -24,6 +24,7 @@
 ?>
     
         <tr>
+            <td><?=$user->id;?></td>
             <td><?=$user->name;?></td>
             <td><?=$user->phone;?></td>
             <td><?=$user->trufa;?></td>

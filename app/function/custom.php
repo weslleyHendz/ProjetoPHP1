@@ -8,11 +8,11 @@ function dd($dump){
 function request(){
     $request = $_SERVER['REQUEST_METHOD'];
 
-    if($request = 'POST'){
+    if($request == 'POST'){
         return $_POST;
     }
-}
     return $_GET;
+}
 
 function redirect($target){
     return header("location:/ProjetoPHP1/public?page={$target}");

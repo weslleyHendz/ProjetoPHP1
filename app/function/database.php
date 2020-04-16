@@ -1,10 +1,43 @@
 <?php
+// $host="localhost";
+// $username = "root";
+// $password = "root";
+// $db = "blog";
+require "config.php";
+
+try{
+    $sql = "CREATE DATABASE IF NOT EXISTS " . $db . ";  SELECT DATABASE()";
+    $pdo     = new PDO('mysql:localhost=' . $host, $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $pdo->exec($sql);
+    echo "Database created successfully";
+
+
+    $create_table = "USE ". $db . "; CREATE TABLE  users (
+            id int(6) AUTO_INCREMENT NOT NULL,
+            name VARCHAR(40) NOT NULL,
+            phone VARCHAR(40) NOT NULL,
+            trufa int(50) NOT NULL,
+            brownie int (10) NOT NULL,
+            ovo int(5) NOT NULL,
+            tele int(10) NOT NULL,
+            total int(10) NOT NULL,
+            PRIMARY KEY (`id`))";
+            
+
+    $pdo->exec($create_table);
+
+
+}
+catch (PDOException $e) {
+    echo  "<br>" . $e->getMessage();
+}
 
 function connect(){
     $pdo = new \PDO("mysql:host=localhost;dbname=blog;charset=utf8", 'root', 'root');
     $pdo -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo -> setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-
+    
     return $pdo;
 }
 

@@ -6,7 +6,8 @@
             "app/function/validate.php",
             "app/function/flash.php",
             "app/function/email.php",
-            "app/function/database.php"
+            "app/function/database.php",
+            "app/function/config.php"
         ]
     }
 }
