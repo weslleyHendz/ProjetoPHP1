@@ -35,7 +35,7 @@ if(isset($_POST['entrada']) && $_POST['entrada'] !="sim") {
     if($_SESSION['numero'] == $entrada) {
         echo "
         <h3>Parabéns, você acertou! <br>O número era <strong> ".$_SESSION['numero'] . "</strong>. <br>
-        Você usou<strong> " . $_SESSION['tentativa'] . "</strong> tentativas.<br>
+        Você usou<strong> " . $_SESSION['tentativa'] . " </strong> tentativas.<br>
         Para jogar novamente, digite <strong>sim</strong> no campo acime e clique em <strong>Recomeçar</strong>.</h3>";
     
     //se o número for maior ou menor...
@@ -49,7 +49,7 @@ if(isset($_POST['entrada']) && $_POST['entrada'] !="sim") {
     if($_SESSION['tentativa'] == "1"){
         echo "<br>Boa sorte";
     
-    }elseif($_SESSION >= "3"){
+    }elseif($_SESSION >= "3" && $_SESSION['numero'] != $_POST['entrada'] ){
     echo "<br>Você já usou " . $_SESSION['tentativa'] . " tentativa(s)";}
     if($_SESSION['tentativa'] >= "7" && ($_POST['entrada'] != $_SESSION['numero'])){
         unset($_SESSION['numero']);

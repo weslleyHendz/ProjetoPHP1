@@ -10,8 +10,6 @@ try{
     $pdo     = new PDO('mysql:localhost=' . $host, $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->exec($sql);
-    echo "Database created successfully";
-
 
     $create_table = "USE ". $db . "; CREATE TABLE  users (
             id int(6) AUTO_INCREMENT NOT NULL,

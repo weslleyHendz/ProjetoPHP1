@@ -1,5 +1,5 @@
 <a href="?page=guess_game"><button autofocus="autofocus">Game adivinhe um número</a></button>
-
+<br>
 <a href="?page=create_user"><button autofocus="autofocus">Cadastrar user</a></button>
 <br>
 <a href="?page=contato"><button autofocus="autofocus">Contato</a></button>
@@ -27,7 +27,7 @@
 ?>
     
         <tr>
-            <td><?=$user->id;?></td>
+            <!-- <td><?=$user->id;?></td> -->
             <td><?=$user->name;?></td>
             <td><?=$user->phone;?></td>
             <td><?=$user->trufa;?></td>
