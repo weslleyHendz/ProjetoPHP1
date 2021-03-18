@@ -1,7 +1,7 @@
 <?php 
 $host="localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $db = "products";
 
 // define('DB', 'blog');
