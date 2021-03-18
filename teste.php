@@ -36,5 +36,15 @@ echo "<br>Tipo de variável: " . gettype($variavel3);
 if(is_string($variavel3)):
     echo '<br>A variável $variavel3 é uma string.';
 else:
-    echo '<br>A variável $variavel3 não é um string.';
+    echo '<br>A variável $variavel3 não é um string.<p>';
 endif;
+
+// $a = date('d/m/Y');
+// echo "Hoje é dia $a";
+
+// $a = date('d/m/Y');
+// echo "Hoje é dia " . $a;
+
+// for ($i = 0; $i > 4; $i++){
+//     echo $i;
+// }
