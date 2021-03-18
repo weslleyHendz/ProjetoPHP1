@@ -10,6 +10,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+
     //Resposta A)
     echo "<h2>Resposta da pergunta A):</h2>";
 $sql = "SELECT id, nome_estado FROM estado WHERE nome_estado = 'Paraná'";
